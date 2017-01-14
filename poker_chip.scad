@@ -1,0 +1,14 @@
+difference()
+{
+    cylinder(3,30,30,true);
+    translate([0,0,1])difference()
+    {
+        cylinder(.5,28,28);
+        cylinder(5,26,26);
+    }
+    translate([0,0,-1.5])difference()
+    {
+        cylinder(.5,28,28);
+        cylinder(5,26,26);
+    }
+}

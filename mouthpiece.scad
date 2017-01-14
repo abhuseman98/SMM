@@ -1,0 +1,17 @@
+difference()
+{
+    union()
+    {
+        difference()
+        {
+            scale([1.75,1,1])difference()
+            {
+                sphere(20);
+                rotate([0,-90,0])translate([-20,-20,0])cube(40);
+            }
+            scale([1.75,1,1])sphere(15);
+        }
+        translate([20,0,0])rotate([0,90,0])cylinder(40,10,10);
+    }
+    translate([10,0,0])rotate([0,90,0])cylinder(80,8,8);
+}
